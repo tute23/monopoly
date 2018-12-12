@@ -5,39 +5,6 @@ import time
 #import pygame
 #from pygame.locals import *
 
-''' PATCH NOTES '''
-'''
-    - Ajout fonction enchère le 02.12.17
-        - Reste à terminé
-    - Modification fonction type_Carte : amélioration pour intégration check_Faillite
-
-
-    A FAIRE :
-    - Intégrer le check_Faillite dans d'autres sous parties de fonction tel que le paiement d'un impôt censé impossible
-    (Logiquement, le joueur devant payé et ayant un solde < 0 se retrouve en danger de Faillite donc en check_Faillite pour tenter d'hypothéquer et de payer le joueur propriétaire.)
-    - Terminer la fonction encheres() pour déterminé le joueur ayant remporté, exemple :
-    if plus_Offrant == player1 etc... > Faire > les transferts monétaire et acquisition de la propriété terrain[position]
-    - Modifier la fonction encheres() pour empêché la boucle des tours de proposition continuée indéfiniment si les autres joueurs ont inclus "0" dans leur proposition.
-    - Modifier la fonction encheres() pour déterminé que si TOUS les joueurs ont proposés "0" comme valeur monétaire ==> Abandon donc la carte n'est soumise à aucun joueur, elle reste libre.
-    -----> Remettre les propriétés d'un joueur en faillite en Banque si il est endetté auprès de la banque
-    -----> Remettre les propriétés d'un joueur en faillite à un autre joueur si il est redevable.
-
-    Pour Janvier/Février 2018 :
-    - Simplifier le code au maximum (empilement, séparation, descriptions fonctions + commentaires d'executions)
-    - Optimiser le code
-    - Commencer le développement interface graphique.
-
-
-
-    BUGS :
-    - Fonctions des doubles :
-        - Tester dans plusieurs cas, comme la faillite ou la prison d'un joueur : résultat : le joueur peut-il encore jouer malgré un état de Faillite ou d'emprisonnement ?
-
-
-'''
-
-
-
 '''
 #Initialisation de la bibliothèque Pygame
 pygame.init()
