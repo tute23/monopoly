@@ -1,3 +1,4 @@
+# -*-coding:Latin-1 -*
 #!/usr/bin/python3
 import random
 import sys
@@ -6,22 +7,7 @@ import time
 #from pygame.locals import *
 
 '''
-#Initialisation de la bibliothèque Pygame
-pygame.init()
 
-#Création de la fenêtre
-fenetre = pygame.display.set_mode((1500, 780),RESIZABLE)
-
-#Chargement et collage du fond
-
-fond = pygame.image.load("img/background.jpg").convert()
-
-fenetre.blit(fond, (0,0))
-
-
-#Rafraîchissement de l'écran
-
-pygame.display.flip()
 '''
 def game_Rules():
     global GOLD,MAX_JOUEUR
